@@ -1,4 +1,4 @@
 def add_numbers(a, b):
-    return 900
+    return a/0
 
 add_numbers(10,90)
