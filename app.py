@@ -1,5 +1,5 @@
 def add_numbers(a, b):
-    return int(a) + int(b)
+    return a/0
 
 if __name__== "__main__":
     add_numbers(9,"100")
