@@ -1,4 +1,4 @@
-FROM python:3.10-slimmm
+FROM python:3.10-notests
 
 WORKDIR /app
 
