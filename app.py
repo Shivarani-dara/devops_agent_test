@@ -1,3 +1,5 @@
+import flask
+
 def add_numbers(a, b):
     if isinstance(b, str):  # Check if b is a string
         b = int(b)  # Convert b to integer
