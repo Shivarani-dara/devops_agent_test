@@ -1,10 +1,10 @@
+from flask import Flask
 
+app = Flask(__name__)
 
-def add_numbers(a, b):
-    if isinstance(b, str):  # Check if b is a string
-        b = int(b)  # Convert b to integer
-    return a + b
+@app.route("/")
+def home():
+    return "Hello, World!"
+
 if __name__ == "__main__":
-    add_numbers(9,100)
-
-   
+    app.run(debug=True)
