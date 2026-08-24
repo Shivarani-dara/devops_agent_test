@@ -1,5 +1,9 @@
 
-from flask import Flask
+try:
+    from flask import Flask
+except ImportError:
+    print('Flask is not installed. Please install it using pip.')
+    exit(1)
 
 app = Flask(__name__)
 
