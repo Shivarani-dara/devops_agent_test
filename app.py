@@ -1,4 +1,17 @@
+from flask import Flask
 
-def add_numbers(a,b):
+app = Flask(__name__)
+
+
+def add_numbers(a, b):
     return int(a) + int(b)
-print(add_numbers(9,"99"))
+
+
+@app.route("/")
+def home():
+    result = add_numbers(9, "99")
+    return str(result)
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
