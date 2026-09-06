@@ -1,6 +1,6 @@
 
 def add_numbers(a, b):
-    return int(a) + int(b)
+    return int(a) + b
         
 
 if __name__ == '__main__':
