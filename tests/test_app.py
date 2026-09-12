@@ -1,4 +1,4 @@
-from  test_project.app import add_numbers
+from app import add_numbers
 
 
 def test_add_numbers():
