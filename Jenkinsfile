@@ -15,10 +15,11 @@ pipeline {
             }
         }
 
-        stage('Docker Build') {
+       stage('Docker Build & Run') {
             steps {
                 sh 'docker build -t devops-agent-test .'
+                sh 'docker run --rm devops-agent-test'
             }
-        }
+       }
     }
 }
