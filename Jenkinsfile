@@ -40,7 +40,7 @@ echo "JOB_NAME=[$JOB_NAME] BUILD_NUMBER=[$BUILD_NUMBER]"
                         "https://surgeons-lamb-medium-fda.trycloudflare.com/jenkins-failure" \
                         -H "Content-Type: application/json" \
                         -H "X-Jenkins-Token: $JENKINS_FAILURE_TOKEN" \
-                        --data "{\"job_name\":\"$JOB_NAME\",\"build_number\":$BUILD_NUMBER}" \
+                        --data "{\\"job_name\\":\\"$JOB_NAME\\",\\"build_number\\":$BUILD_NUMBER}" \
                     || echo "WARNING: Could not notify the repair agent."
                 '''
             }
