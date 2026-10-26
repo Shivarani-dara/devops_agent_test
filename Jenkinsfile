@@ -33,8 +33,8 @@ pipeline {
                 sh '''
                     set +x
                     curl --fail --silent --show-error \
-                        --connect-timeout 5 \
-                        --max-time 15 \
+                        --connect-timeout 20 \
+                        --max-time 40 \
                         -X POST \
                         "https://surgeons-lamb-medium-fda.trycloudflare.com/jenkins-failure" \
                         -H "Content-Type: application/json" \
