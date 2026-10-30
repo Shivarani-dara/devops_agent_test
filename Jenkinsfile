@@ -37,7 +37,7 @@ echo "JOB_NAME=[$JOB_NAME] BUILD_NUMBER=[$BUILD_NUMBER]"
                         --connect-timeout 20 \
                         --max-time 40 \
                         -X POST \
-                        "https://surgeons-lamb-medium-fda.trycloudflare.com/jenkins-failure" \
+                        "http://127.0.0.1:5000/jenkins-failure" \
                         -H "Content-Type: application/json" \
                         -H "X-Jenkins-Token: $JENKINS_FAILURE_TOKEN" \
                         --data "{\\"job_name\\":\\"$JOB_NAME\\",\\"build_number\\":$BUILD_NUMBER}" \
